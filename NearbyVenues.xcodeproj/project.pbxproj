@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21552A3719688702009B7963 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21552A3619688702009B7963 /* Foundation.framework */; };
+		21552A3919688702009B7963 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21552A3819688702009B7963 /* CoreGraphics.framework */; };
+		21552A3B19688702009B7963 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21552A3A19688702009B7963 /* UIKit.framework */; };
+		21552A4119688702009B7963 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21552A3F19688702009B7963 /* InfoPlist.strings */; };
+		21552A4319688702009B7963 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21552A4219688702009B7963 /* main.m */; };
+		21552A4719688702009B7963 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21552A4619688702009B7963 /* AppDelegate.m */; };
+		21552A4A19688702009B7963 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21552A4819688702009B7963 /* Main.storyboard */; };
+		21552A4F19688702009B7963 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21552A4E19688702009B7963 /* Images.xcassets */; };
+		21552A5619688702009B7963 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21552A5519688702009B7963 /* XCTest.framework */; };
+		21552A5719688702009B7963 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21552A3619688702009B7963 /* Foundation.framework */; };
+		21552A5819688702009B7963 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21552A3A19688702009B7963 /* UIKit.framework */; };
+		21552A6019688702009B7963 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21552A5E19688702009B7963 /* InfoPlist.strings */; };
+		21552A6219688702009B7963 /* NearbyVenuesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21552A6119688702009B7963 /* NearbyVenuesTests.m */; };
+		21552A7D19688E7A009B7963 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21552A6D19688E7A009B7963 /* ViewController.m */; };
+		21552A7E19688E7A009B7963 /* FSN_categories.m in Sources */ = {isa = PBXBuildFile; fileRef = 21552A7119688E7A009B7963 /* FSN_categories.m */; };
+		21552A7F19688E7A009B7963 /* FSNConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 21552A7319688E7A009B7963 /* FSNConnection.m */; };
+		21552A8019688E7A009B7963 /* FSNData.m in Sources */ = {isa = PBXBuildFile; fileRef = 21552A7519688E7A009B7963 /* FSNData.m */; };
+		21552A8119688E7A009B7963 /* FoursquareAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 21552A7819688E7A009B7963 /* FoursquareAPIClient.m */; };
+		21552A8219688E7A009B7963 /* VenueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21552A7A19688E7A009B7963 /* VenueManager.m */; };
+		21552A8319688E7A009B7963 /* VenueModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21552A7C19688E7A009B7963 /* VenueModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		21552A5919688702009B7963 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21552A2B19688702009B7963 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21552A3219688702009B7963;
+			remoteInfo = NearbyVenues;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		21552A3319688702009B7963 /* NearbyVenues.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NearbyVenues.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		21552A3619688702009B7963 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		21552A3819688702009B7963 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		21552A3A19688702009B7963 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		21552A3E19688702009B7963 /* NearbyVenues-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NearbyVenues-Info.plist"; sourceTree = "<group>"; };
+		21552A4019688702009B7963 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		21552A4219688702009B7963 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		21552A4419688702009B7963 /* NearbyVenues-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NearbyVenues-Prefix.pch"; sourceTree = "<group>"; };
+		21552A4519688702009B7963 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		21552A4619688702009B7963 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		21552A4919688702009B7963 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		21552A4E19688702009B7963 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		21552A5419688702009B7963 /* NearbyVenuesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NearbyVenuesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		21552A5519688702009B7963 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		21552A5D19688702009B7963 /* NearbyVenuesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NearbyVenuesTests-Info.plist"; sourceTree = "<group>"; };
+		21552A5F19688702009B7963 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		21552A6119688702009B7963 /* NearbyVenuesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NearbyVenuesTests.m; sourceTree = "<group>"; };
+		21552A6C19688E7A009B7963 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		21552A6D19688E7A009B7963 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		21552A7019688E7A009B7963 /* FSN_categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSN_categories.h; sourceTree = "<group>"; };
+		21552A7119688E7A009B7963 /* FSN_categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSN_categories.m; sourceTree = "<group>"; };
+		21552A7219688E7A009B7963 /* FSNConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSNConnection.h; sourceTree = "<group>"; };
+		21552A7319688E7A009B7963 /* FSNConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSNConnection.m; sourceTree = "<group>"; };
+		21552A7419688E7A009B7963 /* FSNData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSNData.h; sourceTree = "<group>"; };
+		21552A7519688E7A009B7963 /* FSNData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSNData.m; sourceTree = "<group>"; };
+		21552A7719688E7A009B7963 /* FoursquareAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoursquareAPIClient.h; sourceTree = "<group>"; };
+		21552A7819688E7A009B7963 /* FoursquareAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoursquareAPIClient.m; sourceTree = "<group>"; };
+		21552A7919688E7A009B7963 /* VenueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenueManager.h; sourceTree = "<group>"; };
+		21552A7A19688E7A009B7963 /* VenueManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenueManager.m; sourceTree = "<group>"; };
+		21552A7B19688E7A009B7963 /* VenueModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenueModel.h; sourceTree = "<group>"; };
+		21552A7C19688E7A009B7963 /* VenueModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenueModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21552A3019688702009B7963 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21552A3919688702009B7963 /* CoreGraphics.framework in Frameworks */,
+				21552A3B19688702009B7963 /* UIKit.framework in Frameworks */,
+				21552A3719688702009B7963 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21552A5119688702009B7963 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21552A5619688702009B7963 /* XCTest.framework in Frameworks */,
+				21552A5819688702009B7963 /* UIKit.framework in Frameworks */,
+				21552A5719688702009B7963 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21552A2A19688702009B7963 = {
+			isa = PBXGroup;
+			children = (
+				21552A3C19688702009B7963 /* NearbyVenues */,
+				21552A5B19688702009B7963 /* NearbyVenuesTests */,
+				21552A3519688702009B7963 /* Frameworks */,
+				21552A3419688702009B7963 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		21552A3419688702009B7963 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21552A3319688702009B7963 /* NearbyVenues.app */,
+				21552A5419688702009B7963 /* NearbyVenuesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21552A3519688702009B7963 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21552A3619688702009B7963 /* Foundation.framework */,
+				21552A3819688702009B7963 /* CoreGraphics.framework */,
+				21552A3A19688702009B7963 /* UIKit.framework */,
+				21552A5519688702009B7963 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		21552A3C19688702009B7963 /* NearbyVenues */ = {
+			isa = PBXGroup;
+			children = (
+				21552A7619688E7A009B7963 /* Model */,
+				21552A6B19688E7A009B7963 /* Controller */,
+				21552A6E19688E7A009B7963 /* Lib */,
+				21552A4519688702009B7963 /* AppDelegate.h */,
+				21552A4619688702009B7963 /* AppDelegate.m */,
+				21552A4819688702009B7963 /* Main.storyboard */,
+				21552A4E19688702009B7963 /* Images.xcassets */,
+				21552A3D19688702009B7963 /* Supporting Files */,
+			);
+			path = NearbyVenues;
+			sourceTree = "<group>";
+		};
+		21552A3D19688702009B7963 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				21552A3E19688702009B7963 /* NearbyVenues-Info.plist */,
+				21552A3F19688702009B7963 /* InfoPlist.strings */,
+				21552A4219688702009B7963 /* main.m */,
+				21552A4419688702009B7963 /* NearbyVenues-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		21552A5B19688702009B7963 /* NearbyVenuesTests */ = {
+			isa = PBXGroup;
+			children = (
+				21552A6119688702009B7963 /* NearbyVenuesTests.m */,
+				21552A5C19688702009B7963 /* Supporting Files */,
+			);
+			path = NearbyVenuesTests;
+			sourceTree = "<group>";
+		};
+		21552A5C19688702009B7963 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				21552A5D19688702009B7963 /* NearbyVenuesTests-Info.plist */,
+				21552A5E19688702009B7963 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		21552A6B19688E7A009B7963 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				21552A6C19688E7A009B7963 /* ViewController.h */,
+				21552A6D19688E7A009B7963 /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		21552A6E19688E7A009B7963 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				21552A6F19688E7A009B7963 /* FSNetworking */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		21552A6F19688E7A009B7963 /* FSNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				21552A7019688E7A009B7963 /* FSN_categories.h */,
+				21552A7119688E7A009B7963 /* FSN_categories.m */,
+				21552A7219688E7A009B7963 /* FSNConnection.h */,
+				21552A7319688E7A009B7963 /* FSNConnection.m */,
+				21552A7419688E7A009B7963 /* FSNData.h */,
+				21552A7519688E7A009B7963 /* FSNData.m */,
+			);
+			path = FSNetworking;
+			sourceTree = "<group>";
+		};
+		21552A7619688E7A009B7963 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				21552A7719688E7A009B7963 /* FoursquareAPIClient.h */,
+				21552A7819688E7A009B7963 /* FoursquareAPIClient.m */,
+				21552A7919688E7A009B7963 /* VenueManager.h */,
+				21552A7A19688E7A009B7963 /* VenueManager.m */,
+				21552A7B19688E7A009B7963 /* VenueModel.h */,
+				21552A7C19688E7A009B7963 /* VenueModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21552A3219688702009B7963 /* NearbyVenues */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21552A6519688702009B7963 /* Build configuration list for PBXNativeTarget "NearbyVenues" */;
+			buildPhases = (
+				21552A2F19688702009B7963 /* Sources */,
+				21552A3019688702009B7963 /* Frameworks */,
+				21552A3119688702009B7963 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NearbyVenues;
+			productName = NearbyVenues;
+			productReference = 21552A3319688702009B7963 /* NearbyVenues.app */;
+			productType = "com.apple.product-type.application";
+		};
+		21552A5319688702009B7963 /* NearbyVenuesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21552A6819688702009B7963 /* Build configuration list for PBXNativeTarget "NearbyVenuesTests" */;
+			buildPhases = (
+				21552A5019688702009B7963 /* Sources */,
+				21552A5119688702009B7963 /* Frameworks */,
+				21552A5219688702009B7963 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21552A5A19688702009B7963 /* PBXTargetDependency */,
+			);
+			name = NearbyVenuesTests;
+			productName = NearbyVenuesTests;
+			productReference = 21552A5419688702009B7963 /* NearbyVenuesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21552A2B19688702009B7963 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Kosuke Ogawa";
+				TargetAttributes = {
+					21552A5319688702009B7963 = {
+						TestTargetID = 21552A3219688702009B7963;
+					};
+				};
+			};
+			buildConfigurationList = 21552A2E19688702009B7963 /* Build configuration list for PBXProject "NearbyVenues" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 21552A2A19688702009B7963;
+			productRefGroup = 21552A3419688702009B7963 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21552A3219688702009B7963 /* NearbyVenues */,
+				21552A5319688702009B7963 /* NearbyVenuesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21552A3119688702009B7963 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21552A4F19688702009B7963 /* Images.xcassets in Resources */,
+				21552A4119688702009B7963 /* InfoPlist.strings in Resources */,
+				21552A4A19688702009B7963 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21552A5219688702009B7963 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21552A6019688702009B7963 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21552A2F19688702009B7963 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21552A8319688E7A009B7963 /* VenueModel.m in Sources */,
+				21552A7D19688E7A009B7963 /* ViewController.m in Sources */,
+				21552A8019688E7A009B7963 /* FSNData.m in Sources */,
+				21552A4719688702009B7963 /* AppDelegate.m in Sources */,
+				21552A4319688702009B7963 /* main.m in Sources */,
+				21552A7F19688E7A009B7963 /* FSNConnection.m in Sources */,
+				21552A7E19688E7A009B7963 /* FSN_categories.m in Sources */,
+				21552A8119688E7A009B7963 /* FoursquareAPIClient.m in Sources */,
+				21552A8219688E7A009B7963 /* VenueManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21552A5019688702009B7963 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21552A6219688702009B7963 /* NearbyVenuesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		21552A5A19688702009B7963 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21552A3219688702009B7963 /* NearbyVenues */;
+			targetProxy = 21552A5919688702009B7963 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		21552A3F19688702009B7963 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21552A4019688702009B7963 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		21552A4819688702009B7963 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21552A4919688702009B7963 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		21552A5E19688702009B7963 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21552A5F19688702009B7963 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		21552A6319688702009B7963 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		21552A6419688702009B7963 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		21552A6619688702009B7963 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NearbyVenues/NearbyVenues-Prefix.pch";
+				INFOPLIST_FILE = "NearbyVenues/NearbyVenues-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		21552A6719688702009B7963 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NearbyVenues/NearbyVenues-Prefix.pch";
+				INFOPLIST_FILE = "NearbyVenues/NearbyVenues-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		21552A6919688702009B7963 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NearbyVenues.app/NearbyVenues";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NearbyVenues/NearbyVenues-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NearbyVenuesTests/NearbyVenuesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		21552A6A19688702009B7963 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NearbyVenues.app/NearbyVenues";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NearbyVenues/NearbyVenues-Prefix.pch";
+				INFOPLIST_FILE = "NearbyVenuesTests/NearbyVenuesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21552A2E19688702009B7963 /* Build configuration list for PBXProject "NearbyVenues" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21552A6319688702009B7963 /* Debug */,
+				21552A6419688702009B7963 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21552A6519688702009B7963 /* Build configuration list for PBXNativeTarget "NearbyVenues" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21552A6619688702009B7963 /* Debug */,
+				21552A6719688702009B7963 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		21552A6819688702009B7963 /* Build configuration list for PBXNativeTarget "NearbyVenuesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21552A6919688702009B7963 /* Debug */,
+				21552A6A19688702009B7963 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 21552A2B19688702009B7963 /* Project object */;
+}
