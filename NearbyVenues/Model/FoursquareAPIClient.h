@@ -11,7 +11,7 @@
 
 @class CLLocation;
 
-@interface FoursquareAPIClient : FSNConnection
+@interface FoursquareAPIClient : NSObject
 
 + (instancetype)sharedInstance;
 
